@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form action="/charge" method="POST">
+    <script
+        src="https://checkout.razorpay.com/v1/checkout.js"
+        data-key="rzp_test_4NWrZjcfBP6KdH"
+        data-amount="{{amount}}"
+        data-name="MMM Kart"
+        data-description="Purchase Description"
+        data-image="vk.jpg"
+        data-netbanking="true"
+        data-description="Tron Legacy"
+        data-prefill.name="{{name}}"
+        data-prefill.email="{{email}}"
+        data-prefill.contact="{{contact}}"
+        data-notes.shopping_order_id="211">
+    </script>
+
+    <input type="hidden" name="shopping_order_id" value="211">
+</form>
+
+{% endblock %}

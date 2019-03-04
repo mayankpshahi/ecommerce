@@ -29,12 +29,25 @@
 
 	    </ul>
 	    <li>
-      	   <img src="/static/images/cart.png" style="max-height: 30px;margin-top:10px;"/>
-      	   <img src="/static/images/account.png" style="max-height: 30px; float: right; margin-left: 10px; margin-top:10px"/>
+	    	<a href="/get_cart_items">
+      	   		<img src="/static/images/cart.png" style="max-height: 30px;margin-top:10px;"/>
+      	   	</a>
+
+      	   	<a href="/signup">
+      	   		<img src="/static/images/account.png" style="max-height: 30px;  margin-left: 10px; margin-top:10px"/>
+      	   	</a>
+
+
         </li>
+        <li>
+        	{% if name %}
+		   		<p style="color:white; float:right"> Welcome {{name}} </p>
+		   	{% endif %}
+		</li>
 
 	  </div>
 	</nav>
+
     {% block body %}{% endblock %}
   </body>
 </html>

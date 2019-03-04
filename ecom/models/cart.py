@@ -9,6 +9,7 @@ class Cart(Base):
         UUID, db.ForeignKey('accounts.id'), nullable=False)
     account = db.relationship(
         'Account', backref=db.backref('carts'))
+    active = db.Column(db.Boolean, default=True)
 
     serializable = ['id']
 

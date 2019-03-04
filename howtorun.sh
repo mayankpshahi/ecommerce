@@ -59,4 +59,7 @@ VALUES ('9ebdbc3d-479f-4712-ba79-a2e2e07b8c84', 'Samsung S10 Series', '16MP+12MP
 	   ('fb163728-ea96-4973-a37f-a62c60bd85db', 'Redmi 5 4GB', '4GB | 3300mAh', 11999, 12, 'redmi5.jpeg','e21cb0a9-1095-4dc7-8813-9ba752b1abad', NOW(), NOW()),
 	   ('2f3c7b1e-94f8-49bf-a6dd-c29e66934c35', 'Blackberry Evolve', '4GB | 64GB | 4000 mAH', 16990, 12, 'bbevolve.jpeg','e21cb0a9-1095-4dc7-8813-9ba752b1abad', NOW(), NOW()),
 	   ('e83cc7f6-bdb3-45e9-b10a-f77d8cdd0082', 'Lenovo K8 Note 4GB', '4GB | 4000mAh', 9200, 32, 'lenovok8.jpeg','e21cb0a9-1095-4dc7-8813-9ba752b1abad', NOW(), NOW());
+#test code push 0 mmmut 4TH mARCH
 
+
+#lets see whats up with new branch

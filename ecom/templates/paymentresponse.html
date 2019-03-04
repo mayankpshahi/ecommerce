@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+{% if success %}
+    <div style="color:green"><p>{{message}}</p></div>
+{% else %}
+    <div style="color:red"><p>{{message}}</p></div>
+{% endif %}
+
+{% endblock %}

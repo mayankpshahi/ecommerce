@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+
+  {% for item in items %}
+    <div class="row" style="margin-left: 30px; background-color:cornsilk;">
+        <div class="col-sm-2" style="margin-left: 30px;text-align: center;">
+              <img src="/static/product/images/{{item.product.image}}" style="max-height: 80px">
+        </div>
+        <div class="col-sm-2" style="text-align: center;">
+          <p>{{item.product.name}}</p>
+          <p>{{item.product.description}}</p>
+        </div>
+        <div class="col-sm-1" style="text-align: center;">
+          <p>{{item.quantity}}</p>
+
+        </div>
+        <div class="col-sm-1" style="text-align: center;">
+          <p>{{item.product.price}}</p>
+        </div>
+        <div class="col-sm-1" style="text-align: center;">
+          <button style="background-color: red;color:white" onclick='remove_from_cart("{{item.id}}")'>Remove</button>
+        </div>
+    </div>
+    <br>
+
+  {% endfor %}
+  <div class="row" style="text-anchor: center;margin-left: 30px">
+    <div class="col-sm-12" style="text-align: center;">
+      <p>Total : {{total}}</p>
+    </div>
+  </div>
+  <div class="row" style="text-anchor: center;margin-left: 30px">
+    <div class="col-sm-12" style="text-align: center;">
+      <button style="background-color:green; color:white" onclick="location.href='/place_order';">Place Order</button>
+    </div>
+  </div>
+
+
+{% endblock %}
